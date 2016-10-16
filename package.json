@@ -1,0 +1,32 @@
+{
+  "name": "guest-password-printer",
+  "version": "0.0.1",
+  "description": "Prints guest passwords for Unifi APs and Ruckus virtualSmartZone controlled aps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henne-/guest-password-printer.git"
+  },
+  "keywords": [
+    "ruckus",
+    "unifi",
+    "virtualsmartzone",
+    "printer",
+    "dpsk",
+    "guest"
+  ],
+  "author": "Hendrik Fellerhoff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/henne-/guest-password-printer/issues"
+  },
+  "homepage": "https://github.com/henne-/guest-password-printer#readme",
+  "dependencies": {
+    "request-json": "^0.6.1",
+    "serialport": "^4.0.3",
+    "thermalprinter": "^0.3.8"
+  }
+}
