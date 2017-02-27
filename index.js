@@ -1,11 +1,12 @@
 var SerialPort = require('serialport'),
-    serialPort = new SerialPort('/dev/ttyUSB0', {
+    serialPort = new SerialPort('/dev/ttyS1', {
         baudRate: 19200
     }),
     Printer = require('thermalprinter');
 
 
-var Unifi = require('./unifi.js');
+var Unifi = require('unifi-api');
+//var Ruckus = require('./ruckus.js');
 
 var api = new Unifi({
   password: 'xxxxxx',
@@ -44,7 +45,8 @@ function printCode(code) {
 }
 
 setTimeout(function() {
-  generateCode()
+ //generateCode();
+ printCode("test")
 }, 1000);
 
 serialPort.on('open',function() {

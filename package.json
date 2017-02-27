@@ -25,8 +25,8 @@
   },
   "homepage": "https://github.com/henne-/guest-password-printer#readme",
   "dependencies": {
-    "request-json": "^0.6.1",
     "serialport": "^4.0.3",
-    "thermalprinter": "^0.3.8"
+    "thermalprinter": "git://github.com/henne-/thermalPrinter.git",
+    "unifi-api": "0.0.1"
   }
 }

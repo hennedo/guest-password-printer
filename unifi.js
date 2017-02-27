@@ -34,7 +34,7 @@ Unifi.prototype.connect = function() {
   var s = 'http://';
   if(this.options.ssl)
     s = 'https://';
-  this._client = request.createClient(s + this.options.host + ':' + this.options.port, {jar: true, agentOptions:{rejectUnauthorized: false}});
+  this._client = request.createClient(s + this.options.host + ':' + this.options.port, {jar: true, agentOptions:{rejectUnauthorized: !this.options.selfSigned}});
 }
 
 // "Publics"
