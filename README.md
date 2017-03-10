@@ -6,8 +6,9 @@ We use this one: https://www.adafruit.com/product/597 - but you can use any, if 
 ## Installation
 
 ### Node part
-This Project uses Node 6.10.0, so you have to install this
-Use either [NVM](https://github.com/creationix/nvm) or follow the Docs at https://nodejs.org/en/ to install Node and NPM.
+This Project uses Node 6.10.0, so you have to install this.
+
+Use either [NVM](https://github.com/creationix/nvm) or follow the docs at https://nodejs.org/en/ to install Node and NPM.
 Once you installed Node do ```npm install```. This will install the needed libs and you are ready to go.
 
 You propably need to adjust the Serialport used. Just change line 2 in index.js to your corresponding port. The one used, is the correct one for the raspberrypi zero.
@@ -16,7 +17,7 @@ You propably need to adjust the Serialport used. Just change line 2 in index.js 
 TODO
 
 ## Usage
-The button.py script, listens for buttonpresses on GPIO Pin 19 on a Raspberrypi Zero or compatible and then runs the Node script, if the button is pressed.
+The button.py script, listens for buttonpresses on GPIO Pin 24 (Pin 19 on the Board) on a Raspberrypi Zero or compatible and then runs the Node script, if the button is pressed.
 Example: 
 ```
 # export USER=unifiuser;
