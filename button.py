@@ -29,7 +29,7 @@ while True:
 #waits for Pin Input and then exectures the script below
   if (GPIO.input(buttonPin)):
     if (testingGPIO):
-      print "PIN " + buttonPing + " works correctly."
+      print "PIN " + buttonPin + " works correctly."
       continue
     #the script that will be executed (as root)
-    os.system("node /home/pi/guest-password-printer/index.js")
+    os.system("node index.js")
