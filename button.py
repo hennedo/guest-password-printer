@@ -1,7 +1,6 @@
 import RPi.GPIO as GPIO
 import time
 import os
-import sys
 
 from optparse import OptionParser
 
@@ -28,9 +27,9 @@ if(testingGPIO):
 
 while True:
 #waits for Pin Input and then exectures the script below
-    if (GPIO.input(buttonPin)):
-      if (testingGPIO):
-        print "PIN " + buttonPing + " works correctly."
-        continue
+  if (GPIO.input(buttonPin)):
+    if (testingGPIO):
+      print "PIN " + buttonPing + " works correctly."
+      continue
     #the script that will be executed (as root)
     os.system("node /home/pi/guest-password-printer/index.js")
