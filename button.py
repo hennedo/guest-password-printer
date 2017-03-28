@@ -15,10 +15,7 @@ parser.add_option("-p", "--pin", dest="pin", help="GPIO pin to use. If not provi
 
 (options, args) = parser.parse_args()
 
-testingGPIO = False
-if options.testGPIO:
-   testingGPIO = True
-
+testingGPIO = options.testGPIO != None
 buttonPin = options.pin 
 
 #sets GPIO Mode to use Hardware Pin Layout
